@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            Checkout | VivasayaMart
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container navbar">
+                <a class="logo" href="index.html">
+                    🌿 VivasayaMart
+                </a>
+                <a class="cart-link" href="cart.html">
+                    🛒
+                    <span id="cartCount">
+                        0
+                    </span>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="section">
+                <div class="container checkout-layout">
+                    <form id="checkoutForm" class="form-card">
+                        <p class="eyebrow">
+                            CHECKOUT
+                        </p>
+                        <h1>
+                            Delivery Details
+                        </h1>
+                        <label>
+                            Full Name
+                            <input id="name" required>
+                        </label>
+                        <label>
+                            Phone Number
+                            <input id="phone" type="tel" required>
+                        </label>
+                        <label>
+                            Email
+                            <input id="email" type="email" required>
+                        </label>
+                        <label>
+                            Address
+                            <textarea id="address" required>
+                            </textarea>
+                        </label>
+                        <label>
+                            City
+                            <input id="city" required>
+                        </label>
+                        <label>
+                            Payment Method
+                            <select id="payment">
+                                <option>
+                                    Cash on Delivery
+                                </option>
+                                <option>
+                                    UPI
+                                </option>
+                                <option>
+                                    Card
+                                </option>
+                            </select>
+                        </label>
+                        <button class="btn primary" type="submit">
+                            Place Order
+                        </button>
+                    </form>
+                    <aside id="checkoutSummary" class="summary-card">
+                    </aside>
+                </div>
+            </section>
+        </main>
+        <script src="js/main.js">
+        </script>
+        <script src="js/products.js">
+        </script>
+        <script src="js/checkout.js">
+        </script>
+    </body>
+</html>
