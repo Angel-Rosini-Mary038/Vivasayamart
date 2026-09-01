@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | VivasayaMart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a class="logo" href="index.html">
+                🌿 VivasayaMart
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a class="active" href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="orders.html">
+                    Orders
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a class="cart-link" href="cart.html">
+                    🛒
+                    <span id="cartCount">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-banner">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    OUR STORE
+                </p>
+
+                <h1>
+                    All Agriculture Products
+                </h1>
+
+                <p>
+                    Find everything you need for your farm.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="shop-toolbar">
+
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="பொருட்களைத் தேடுங்கள்..."
+                    >
+
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            அனைத்து வகைகள்
+                        </option>
+
+                        <option value="விதைகள்">
+                            விதைகள்
+                        </option>
+
+                        <option value="இயற்கை உரங்கள்">
+                            இயற்கை உரங்கள்
+                        </option>
+
+                        <option value="இயற்கை பூச்சி விரட்டிகள்">
+                            இயற்கை பூச்சி விரட்டிகள்
+                        </option>
+
+                        <option value="விவசாய கருவிகள்">
+                            விவசாய கருவிகள்
+                        </option>
+
+                        <option value="நீர்ப்பாசன பொருட்கள்">
+                            நீர்ப்பாசன பொருட்கள்
+                        </option>
+
+                        <option value="பண்ணை காய்கறிகள்">
+                            பண்ணை காய்கறிகள்
+                        </option>
+
+                    </select>
+
+
+                    <select id="sortFilter">
+
+                        <option value="default">
+                            வரிசைப்படுத்து
+                        </option>
+
+                        <option value="low">
+                            குறைந்த விலையிலிருந்து
+                        </option>
+
+                        <option value="high">
+                            அதிக விலையிலிருந்து
+                        </option>
+
+                        <option value="name">
+                            பெயர்
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <p
+                    id="resultCount"
+                    class="result-count"
+                ></p>
+
+
+                <div
+                    id="productGrid"
+                    class="product-grid"
+                ></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="copyright">
+            © 2026 VivasayaMart
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
